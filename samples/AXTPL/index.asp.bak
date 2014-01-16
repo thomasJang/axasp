@@ -1,0 +1,22 @@
+﻿<%@ language="javascript" CODEPAGE="65001" %>
+<%
+	Session.CodePage  = 65001;
+	Response.CharSet  = "UTF-8";
+	Response.AddHeader("Pragma","no-cache");
+	Response.AddHeader("cache-control", "no-staff");
+	Response.Expires  = -1;
+%>
+<!--#include virtual="/_AXASP/AXJ.asp"-->
+<!--#include virtual="/_AXASP/AXTPL.asp"-->
+<%
+
+	var myTpl = new AXTPM();
+	
+	myTpl.setConfig({
+		strConnection: strMSSql,		// 연결 문자열(필수 인자)
+		debug: true						// 디버그 모드의 경우 에러가 발생할 때마다 에러내용을 출력해준다
+	});
+	
+	myTpl.test();
+
+%>

@@ -1,0 +1,153 @@
+/* -- board css 게시판 CSS -- */
+a{text-decoration:none;}
+
+/* -- board base font -- */
+.BBF{font-family:malgun gothic, dotum, gothic;font-size:12px;}
+
+.boardContainer{
+	position:relative;padding:0px 0px 30px 0px;
+}
+.boardContainer input{vertical-align:middle;font-size:12px;line-height:14px;padding:2px;}
+.boardContainer select{vertical-align:middle;font-size:12px;line-height:14px;}
+.boardContainer .categorys{position:absolute;z-index:10;width:150px;height:20px;right:6px;top:-30px;_right:16px;_top:-30px;}
+.boardContainer .categorys input{position:absolute;margin:0px;border:2px solid #fff;height:17px;}
+.boardContainer .categorys td, .boardContainer .categorys LI{line-height:13px;font-size:11px;}
+.boardContainer a{color:#444;}
+.boardContainer a:hover{color:#5fa23b;}
+
+.boardTools{position:relative;margin:10px 0px 5px;height:30px;}
+.boardTools .pageNos{position:absolute;left:0px;_top:2px;#top:1px;padding-left:10px;}
+.boardTools .pageNos a{display:inline-block;padding:0px 3px;min-width:12px;_width:12px;text-align:center;color:#444;font-weight:bold;}
+.boardTools .pageNos a:hover{text-decoration:underLine;}
+.boardTools .pageNos td, .boardTools .pageNos li{line-height:13px;font-size:11px;}
+.boardTools .pageNos input{position:absolute;border:2px solid #b62d35;height:17px;line-height:17px;width:80px;}
+.boardTools .pageNos .pgprev{display:inline-block;padding:0px;width:20px;height:20px;background:url(/samples/AXBoard/_img/pgprev.png) 3px 8px no-repeat;text-indent:-1000px;overflow:hidden;}
+.boardTools .pageNos .pgnext{display:inline-block;padding:0px;width:20px;height:20px;background:url(/samples/AXBoard/_img/pgnext.png) 3px 8px no-repeat;text-indent:-1000px;overflow:hidden;}
+
+.boardTools .boardSearch{position:absolute;right:0px;line-height:1em;}
+.boardTools .boardSearch td{line-height:13px;font-size:11px;}
+/*.boardTools .boardSearch input{border:2px solid #5fa23b;padding:2px;margin:0px;}*/
+.boardTools .boardSearch input[type=text]{border:3px solid #5fc7c6;padding:2px;margin:0px;}
+.boardTools .boardSearch a{color:#666;}
+
+.BoardType01{table-layout:fixed;}
+.BoardType01 thead td{
+	padding:0px;background:url(/samples/AXBoard/_img/boardHead.gif) no-repeat -10px 0px;
+	font-size:11px;line-height:38px;height:38px;text-align:center;color:#222;font-weight:bold;text-overflow:ellipsis;overflow:hidden;}
+.BoardType01 thead td.tl{background:url(/samples/AXBoard/_img/boardHead.gif) no-repeat 0px 0px;}
+.BoardType01 thead td.tr{background:url(/samples/AXBoard/_img/boardHead.gif) no-repeat 100% 0px;}
+.BoardType01 thead td.vtd{background:url(/samples/AXBoard/_img/boardHead.gif) no-repeat 0px 0px;}
+
+.BoardType01 tbody th{border-bottom:1px solid #eee;font-size:12px;padding:6px 0px;text-overflow:ellipsis;overflow:hidden;}
+.BoardType01 tbody td{border-bottom:1px solid #f3f3f3;font-size:12px;padding:6px 0px;text-overflow:ellipsis;overflow:hidden;}
+.BoardType01 tbody td a{margin-left:3px;line-height:1.5em;}
+.BoardType01 tbody td a.deleteComment{display:inline-block;text-indent:-1000px;background:url(/samples/AXBoard/_img/cmdel.gif) 0px 0px  no-repeat;width:20px;}
+
+.BoardType01 .no, .BoardType01 .category, .BoardType01 .regidate{text-align:center;color:#787878;}
+.BoardType01 .writer{text-align:center;}
+.BoardType01 .category{color:#888;}
+.BoardType01 .content{line-height:1.6em;margin-top:3px;color:#888;text-overflow:ellipsis;overflow:hidden;}
+.BoardType01 tbody tr.notice td{background:#FFFFE6;color:#000;}
+.BoardType01 tbody tr.notice td.title a{color:#000;}
+.BoardType01 tbody tr.notice td.title a:hover{color:#ff3300;}
+
+.BoardType01 img{vertical-align:middle;}
+.BoardType01 textarea{background:#eee;border-top:1px solid #888;border-left:1px solid #888;border-right:1px solid #ccc;border-bottom:1px solid #ddd;}
+
+.BoardType01 .viewer td{color:#888;}
+.BoardType01 .viewer td.title{text-align:center;color:#444;}
+
+.BoardType01 tbody tr.imgList{}
+
+.BoardType01 tbody tr.imgList td div{width:170px;height:300px;float:left;padding:0px;margin:5px 10px 5px 0px;}
+.BoardType01 tbody tr.imgList td div dl,
+.BoardType01 tbody tr.imgList td div dd,
+.BoardType01 tbody tr.imgList td div dt{margin:0px;padding:0px;}
+.BoardType01 tbody tr.imgList td div dd{font-size:11px;padding:6px 0px;text-overflow:ellipsis;overflow:hidden;}
+.BoardType01 tbody tr.imgList td div dd a{margin-left:3px;line-height:1.5em;}
+
+.BoardType01 tbody td span.notice{vertical-align:middle;display:inline-block;width:24px;height:15px;background:url(/samples/AXBoard/_img/notice.gif) 0px 0px  no-repeat;}
+
+.BoardType01 tbody td span.defaultStyle{vertical-align:middle;display:inline-block;width:17px;height:17px;}
+.BoardType01 tbody td span.re{background:url(/samples/AXBoard/_img/re.gif) 0px 2px  no-repeat;width:14px;}
+.BoardType01 tbody td span.new{background:url(/samples/AXBoard/_img/newb.gif) 0px 2px  no-repeat;width:14px;}
+.BoardType01 tbody td span.att{background:url(/samples/AXBoard/_img/att.gif) 0px 0px  no-repeat;}
+.BoardType01 tbody td span.atts{background:url(/samples/AXBoard/_img/atts.gif) 0px 0px  no-repeat;}
+.BoardType01 tbody td span.comment{background:url(/samples/AXBoard/_img/comment.gif) 0px 0px  no-repeat;}
+.BoardType01 tbody td span.comments{background:url(/samples/AXBoard/_img/comments.gif) 0px 0px  no-repeat;}
+
+
+
+
+.BoardType02{table-layout:fixed;}
+.BoardType02 thead td{
+	padding:0px;border-top:1px solid #888;border-bottom:1px solid #cecece;background:#f3f3f3;
+	font-size:11px;line-height:2.5em;text-align:center;color:#222;font-weight:bold;text-overflow:ellipsis;overflow:hidden;}
+.BoardType02 tbody th{border-bottom:1px solid #eee;font-size:11px;padding:6px 0px;text-overflow:ellipsis;overflow:hidden;}
+.BoardType02 tbody td{border-bottom:1px solid #f3f3f3;font-size:11px;padding:6px 0px;text-overflow:ellipsis;overflow:hidden;}
+.BoardType02 input{background:#f3f3f3;border:1px inset #eee;padding:3px;}
+.BoardType02 textarea{background:#fff;border:1px inset #eee;padding:3px;font-size:12px;}
+
+.boardContent{overflow:hidden;font-family:Gulim;color:#666;min-height:200px;_height:200px;}
+
+.boardContent p{margin:3px 0px;}
+
+.boardButtons{margin:5px;}
+
+.selectOtherList{margin-bottom:10px;border-top:1px solid #E0E0E0;border-bottom:1px solid #E0E0E0;}
+.commentList{margin-bottom:10px;}
+
+.BoardType01Sub{table-layout:fixed;}
+.BoardType01Sub tbody th{text-align:center;}
+
+.BoardType01Sub tbody th span.defaultStyle{vertical-align:middle;width:16px;height:16px;border:1px soldi #cc0000;display:inline-block;}
+.BoardType01Sub tbody th span.next4{background:url(/samples/AXBoard/_img/next4.gif) 0px 0px no-repeat;}
+.BoardType01Sub tbody th span.next3{background:url(/samples/AXBoard/_img/next3.gif) 0px 0px no-repeat;}
+.BoardType01Sub tbody th span.next2{background:url(/samples/AXBoard/_img/next2.gif) 0px 0px no-repeat;}
+.BoardType01Sub tbody th span.next1{background:url(/samples/AXBoard/_img/next1.gif) 0px 0px no-repeat;}
+.BoardType01Sub tbody th span.stop {background:url(/samples/AXBoard/_img/stop.gif) 1px 3px no-repeat;}
+.BoardType01Sub tbody th span.prev1{background:url(/samples/AXBoard/_img/prev1.gif) 0px 0px no-repeat;}
+.BoardType01Sub tbody th span.prev2{background:url(/samples/AXBoard/_img/prev2.gif) 0px 0px no-repeat;}
+.BoardType01Sub tbody th span.prev3{background:url(/samples/AXBoard/_img/prev3.gif) 0px 0px no-repeat;}
+.BoardType01Sub tbody th span.prev4{background:url(/samples/AXBoard/_img/prev4.gif) 0px 0px no-repeat;}
+
+.BoardType01Sub tbody td{padding:0px;background:#f8f8f8;
+	font-size:11px;line-height:2.2em;color:#222;text-overflow:ellipsis;overflow:hidden;}
+
+.BoardType01Sub tbody td span.defaultStyle{vertical-align:middle;display:inline-block;width:17px;height:17px;}
+.BoardType01Sub tbody td span.re{background:url(/samples/AXBoard/_img/re.gif) 0px 2px  no-repeat;width:14px;}
+
+.BoardType01Sub a{color:#aaa;text-overflow:ellipsis;overflow:hidden;}
+.BoardType01Sub a:hover{color:#000;text-decoration:none;}
+.BoardType01Sub .stop a{color:#000;}
+.BoardType01Sub .stop a:hover{color:#994D00;}
+.BoardType01Sub .stop td{background:#fff;}
+
+
+
+.BoardType01Comment{table-layout:fixed;}
+.BoardType01Comment tbody td{padding:3px;}
+.BoardType01Comment textarea{border:1px inset #eee;background:#fafafa;line-height:15px}
+
+.eofMSG{text-align:center;padding:10px 0;}
+
+.AXBCForm {width:100%}
+.AXBCForm textarea.commentContent {width:100%;height:43px;overflow:auto;border:1px solid #999;}
+
+
+/* pagingDiv */
+.pagingDiv {padding:0 0 10px 0;text-align:center;color:#000;}
+.pagingDiv a{display:inline-block;width:20px;height:18px;vertical-align:middle;}
+
+.pagingDiv a.first	{background:url(/samples/AXBoard/_img/pgprev.png) 3px 1px no-repeat;text-indent:-1000px;overflow:hidden;}
+.pagingDiv a.prev	{background:url(/samples/AXBoard/_img/prev0.gif) 3px 1px no-repeat;text-indent:-1000px;overflow:hidden;}
+.pagingDiv a.next	{background:url(/samples/AXBoard/_img/next0.gif) 3px 0px no-repeat;text-indent:-1000px;overflow:hidden;}
+.pagingDiv a.last	{background:url(/samples/AXBoard/_img/pgnext.png) 3px 1px no-repeat;text-indent:-1000px;overflow:hidden;}
+
+/*
+.BoardType01reply{border-top:1px dashed #cc0000;}
+.replycontent {border:1px solid #cc0000; padding:10px;} 
+*/
+
+/* -- board css -- */
+/* ------------------------------------------------------------------------------------------------------------------ */
